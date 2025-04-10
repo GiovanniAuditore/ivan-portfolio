@@ -68,6 +68,28 @@
       }
     });
   };
+
+  function openModal(id) {
+    const modal = document.getElementById(id);
+    modal.style.display = 'block';
+    modal.classList.add('fade-in');
+  }
+
+  function closeModal(id) {
+    const modal = document.getElementById(id);
+    modal.classList.remove('fade-in');
+    modal.style.display = 'none';
+  }
+
+  window.onclick = function(event) {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+      if (event.target === modal) {
+        modal.style.display = 'none';
+        modal.classList.remove('fade-in');
+      }
+    });
+  };
 </script>
 <body>
   <header class="navbar">
@@ -115,6 +137,7 @@
     <div class="footer-left">
       <p>© 2025 Ivan Halka.</p>
       <p>Powered with Castrol Oil and caffeine.</p>
+      <p><a href="Ivan_Halka_Cover_Letter.pdf" target="_blank">📄 View Cover Letter (PDF)</a></p>
     </div>
     <div class="footer-right">
       <p><strong>Call:</strong> +41 79 528 41 37</p>
