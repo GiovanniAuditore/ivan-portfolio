@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<!-- ABOUT MODAL -->
+<div id="modal-about" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-about')">&times;</span>
+    <h2>About Me</h2>
+    <p>
+      I'm Data Science Intern passionate about machine learning, sustainability, and innovation. My background is quite diverse — from fashion and sound studio work to founding a café and organizing conferences. Today, I focus on using data and AI to tackle real-world challenges.
+    </p>
+    <p>
+      I'm currently completing a Data Science BSc at FHNW, contributing to research projects like EUCLID and Biocycling. I’ve worked with municipalities, built AI models to detect waste contamination, and supported public outreach through events and visual data collection.
+    </p>
+    <p>
+      I speak English (C1) and German (B2–C1), and bring strong teamwork, communication, and creative problem-solving skills. I believe in combining analytical thinking with empathy to create solutions that are both impactful and human-centered.
+    </p>  </div>
+</div>
+
+<!-- PROJECTS MODAL -->
+<div id="modal-projects" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-projects')">&times;</span>
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>AI for Waste Contamination Detection:</strong> Computer vision model for classifying visual waste (PyTorch, OpenCV)</li>
+      <li><strong>Visual Waste Typology:</strong> Categorized over 1,000 photos into material types using clustering techniques</li>
+      <li><strong>Swiss Municipality Dashboard:</strong> Interactive data dashboard for public communication on waste performance</li>
+      <li><strong> Biocycling Map:</strong> Participated in building a visual map of contaminated hotspots in Switzerland</li>
+      <p>
+        🌱 <strong>SIMPLA_GRÜN Project:</strong><br>
+        Contributed to the research and practical implementation of sustainable plastic alternatives as part of the <a href="https://biomassesuisse.ch/simpla_gr_n" target="_blank">SIMPLA_GRÜN initiative</a> by Biomasse Suisse.
+      </p>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-resume" class="modal">
+  <div class="modal-content resume-modal">
+    <span class="close" onclick="closeModal('modal-resume')">&times;</span>
+    <h2>My Resume</h2>
+    <iframe src="resume.pdf" width="100%" height="500px" frameborder="0"></iframe>
+    <a href="resume.pdf" download class="btn outline" style="margin-top: 1rem; display: inline-block;">Download PDF</a>
+  </div>
+</div>
+
+<!-- Script -->
+<script>
+  function openModal(id) {
+    document.getElementById(id).style.display = 'block';
+  }
+  function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+
+  // Optional: Close modal when clicking outside of it
+  window.onclick = function(event) {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  };
+</script>
+<body>
+  <header class="navbar">
+    <div class="brand">
+      <span class="dot"></span> Ivan Halka / Data Science Intern
+    </div>
+    <nav>
+      <ul>
+        <li><a href="javascript:void(0)" onclick="openModal('modal-about')">ABOUT ME</a></li>
+        <li><a href="javascript:void(0)" class="btn filled" onclick="openModal('modal-resume')">RESUME</a></li>
+        <li><a href="javascript:void(0)" onclick="openModal('modal-projects')">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="card">
+      <img src="images/IMG_2688.jpeg" alt="Your Photo" class="avatar" />
+      <h1>Ivan Halka</h1>
+      <p class="role">Data Science Intern</p>
+      <div class="socials">
+        <a href="#"><img src="images/Telegram_logo.svg.png" alt="Telegram" /></a>
+        <a href="#"><img src="images/Logo_of_Twitter.svg.png" alt="LinkedIn" /></a>
+      </div>
+    </div>
+
+    <div class="intro">
+      <h2>Hello</h2>
+      <h3>Here's who I am & what I do</h3>
+      <div class="buttons">
+        <a href="javascript:void(0)" class="btn filled" onclick="openModal('modal-resume')">RESUME</a>
+        <a href="javascript:void(0)" class="btn outline" onclick="openModal('modal-projects')">PROJECTS</a>      </div>
+      <p>
+        I'm a STEM student passionate about machine learning, sustainability, and digital innovation.
+        I love working in teams and believe in the power of communication and data to drive change.
+      </p>
+      <p>
+        This is a space to share my journey and the things I'm learning along the way.
+      </p>
+    </div>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-left">
+      <p>© 2025 Ivan Halka.</p>
+      <p>Powered with Castrol Oil and caffeine.</p>
+    </div>
+    <div class="footer-right">
+      <p><strong>Call:</strong> +41 79 528 41 37</p>
+      <p><strong>Write:</strong> ivan.halka@fhnw.ch</p>
+      <p><strong>Follow:</strong>
+        <a href="#">TW</a> • <a href="#">TG</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
