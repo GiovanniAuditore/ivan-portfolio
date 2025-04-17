@@ -3,107 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Ivan Halka | Data Science Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- ABOUT MODAL -->
-  <div id="modal-about" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal-about')">&times;</span>
-<h2>About Me</h2>
-<p>
-I am a Data Science student at FHNW with a strong focus on machine learning, sustainability, and applied digital innovation. My academic and practical background is multidisciplinary, combining quantitative analysis with real-world experience in areas such as municipal waste management, environmental research, and technology-enabled public outreach.
-</p>
-<p>
-In recent years, I have contributed to projects involving AI-driven waste classification, geospatial mapping of contaminated sites, and the development of data dashboards for public institutions. These experiences have deepened my interest in applied machine learning and its potential to support ecological and social transformation.
-</p>
-<p>
-I bring a high level of motivation, excellent communication and teamwork skills, and a structured approach to problem solving. I am fluent in English (C1) and proficient in German (B2–C1), and I am committed to continuous learning and interdisciplinary collaboration.
-</p>
-    </div>
-  </div>
-
-  <!-- PROJECTS MODAL -->
-<div id="modal-projects" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal-projects')">&times;</span>
-    <h2>Projects</h2>
-
-    <div class="project-grid">
-
-      <div class="project-card">
-        <img src="images/image_waste.png" alt="AI for Waste Detection">
-        <h4>AI for Waste Detection</h4>
-        <p>
-          Designed and trained a convolutional neural network using PyTorch and OpenCV to automatically classify municipal waste from image data. This project supported research on improving recycling efficiency through computer vision.
-        </p>
-      </div>
-
-      <div class="project-card">
-        <img src="images/image_cluster.png" alt="Visual Waste Typology">
-        <h4>Visual Waste Typology</h4>
-        <p>
-          Conducted a clustering analysis of over 1,000 photographs of waste, developing a typology based on material, color, and spatial features. The output was used to inform public communication strategies and training datasets.
-        </p>
-      </div>
-
-      <div class="project-card">
-        <img src="images/project3.jpg" alt="Municipality Dashboard">
-        <h4>Municipality Dashboard</h4>
-        <p>
-          Built an interactive dashboard for Swiss municipalities to communicate key waste performance indicators to the public. The dashboard integrated statistical visualizations and was used for participatory events and reporting.
-        </p>
-      </div>
-
-      <div class="project-card">
-        <img src="images/project4.jpg" alt="SIMPLA_GRÜN">
-        <h4>SIMPLA_GRÜN</h4>
-        <p>
-          
-            Contributed to the <a href="https://biomassesuisse.ch/simpla_gr_n" target="_blank">SIMPLA_GRÜN</a> initiative by Biomasse Suisse, focused on research and implementation of sustainable alternatives to conventional plastics. My role involved data collection and public engagement strategies.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-  <!-- RESUME MODAL -->
-  <div id="modal-resume" class="modal">
-    <div class="modal-content resume-modal">
-      <span class="close" onclick="closeModal('modal-resume')">&times;</span>
-      <h2>My Resume</h2>
-      <iframe src="resume.pdf" width="100%" height="500px" frameborder="0"></iframe>
-      <a href="resume.pdf" download class="btn outline" style="margin-top: 1rem; display: inline-block;">Download PDF</a>
-    </div>
-  </div>
-
-  <!-- BLOG MODAL -->
-  <div id="modal-blog" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal-blog')">&times;</span>
-      <h2>Reflection Blog</h2>
-      <h3>1. Job Reflection</h3>
-      <p>I chose the Data Science Internship at <a href="https://www.linkedin.com/jobs/view/3880910381" target="_blank">Kanadevia Inova</a>aligns closely with my academic focus and personal interests in sustainability and applied artificial intelligence. I am particularly drawn to the company’s interdisciplinary approach to transforming waste into value — a vision that reflects both ecological awareness and technical sophistication.</p>
-      <p>
-        My academic training and hands-on experience in machine learning projects related to waste classification, municipal data communication, and public engagement prepare me well for this role. I am confident that I can contribute effectively from both a technical and conceptual standpoint, while also learning from the organization’s strong R&D environment.
-        </p>
-        <p>
-        I view this internship as an opportunity to develop professionally while working on challenges of real societal relevance, contributing to circular economy solutions and data-driven innovation.
-        </p>
-      <h3>2. Self-Reflection</h3>
-      <p>After completing the <a href="https://careersmart.org.uk/career-test-skills-audit-part-1" target="_blank">Skills Audit</a>helped me reflect on both strengths and areas for development. I found that my communication skills and team collaboration were among my strongest assets — a result that aligns well with my academic performance and project experience.</p>
-      <p>
-        However, the audit also highlighted areas such as numerical confidence and proficiency in office software (e.g., Excel) where I can grow further. I have already started addressing this by integrating more numerical analysis into my projects and pursuing short, targeted training.
-        </p>
-        <p>
-        I consider these not as weaknesses, but as concrete opportunities for professional development. Strengthening these areas will allow me to bring even more value to interdisciplinary teams and data-driven work environments.
-        </p>
-    </div>
-  </div>
-
   <!-- HEADER -->
   <header class="navbar">
     <div class="brand">
@@ -123,7 +27,7 @@ I bring a high level of motivation, excellent communication and teamwork skills,
   <!-- MAIN -->
   <main class="hero">
     <div class="card">
-      <img src="images/IMG_9835.jpeg" alt="Your Photo" class="avatar" />
+      <img src="images/IMG_9835.jpeg" alt="Ivan Halka" class="avatar" />
       <h1>Ivan Halka</h1>
       <p class="role">Data Science Intern</p>
       <div class="socials">
@@ -159,7 +63,89 @@ I bring a high level of motivation, excellent communication and teamwork skills,
     </div>
   </footer>
 
-  <!-- MODAL SCRIPT (в самом конце!) -->
+  <!-- MODALS -->
+  <div id="modal-about" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-about')">&times;</span>
+      <h2>About Me</h2>
+      <p>I am a Data Science student at FHNW with a strong focus on machine learning, sustainability, and applied digital innovation. My academic and practical background is multidisciplinary, combining quantitative analysis with real-world experience in municipal waste management, environmental research, and technology-enabled public outreach.</p>
+      <p>I've contributed to projects involving AI-driven waste classification, geospatial mapping, and interactive data dashboards. These experiences solidified my interest in using machine learning for ecological and social impact.</p>
+      <p>I am fluent in English (C1), proficient in German (B2–C1), and bring strong communication and teamwork skills. I value structured problem-solving and continuous learning.</p>
+    </div>
+  </div>
+
+  <div id="modal-projects" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-projects')">&times;</span>
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="images/image_waste.png" alt="AI for Waste Detection">
+          <h4>AI for Waste Detection</h4>
+          <p>Designed a convolutional neural network to classify municipal waste from images using PyTorch and OpenCV. This supported recycling efficiency research via computer vision.</p>
+        </div>
+        <div class="project-card">
+          <img src="images/image_cluster.png" alt="Visual Waste Typology">
+          <h4>Visual Waste Typology</h4>
+          <p>Clustered 1,000+ waste photos based on material, color, and features. Informed communication strategies and training datasets.</p>
+        </div>
+        <div class="project-card">
+          <img src="images/image_3.png" alt="Municipality Dashboard">
+          <h4>Municipality Dashboard</h4>
+          <p>Created a public-facing dashboard for municipalities, visualizing waste performance KPIs for participatory events and reporting.</p>
+        </div>
+        <div class="project-card">
+          <img src="images/image_Simpla.png" alt="SIMPLA_GRÜN">
+          <h4>SIMPLA_GRÜN</h4>
+          <p>Supported Biomasse Suisse's <a href="https://biomassesuisse.ch/simpla_gr_n" target="_blank">SIMPLA_GRÜN</a> initiative with data collection and public outreach on sustainable plastics.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-resume" class="modal">
+    <div class="modal-content resume-modal">
+      <span class="close" onclick="closeModal('modal-resume')">&times;</span>
+      <h2>My Resume</h2>
+      <iframe src="resume.pdf" width="100%" height="500px" frameborder="0"></iframe>
+      <a href="resume.pdf" download class="btn outline" style="margin-top: 1rem; display: inline-block;">Download PDF</a>
+    </div>
+  </div>
+
+  <div id="modal-blog" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-blog')">&times;</span>
+      <h2>Reflection Blog</h2>
+  
+      <h3>Assignment 1 – Job Reflection</h3>
+      <p>
+        I chose the Data Science Internship at 
+        <a href="https://www.kanadevia-inova.com" target="_blank">Kanadevia Inova</a> 
+        because it connects directly with what I care about most — using data and technology to make a real difference. Their focus on turning waste into something valuable really stood out to me. It’s not just smart — it’s meaningful.
+      </p>
+      <p>
+        My previous work on waste classification and interactive dashboards showed me how powerful data can be when applied thoughtfully. I enjoy working on problems that sit at the intersection of science, society, and sustainability, and I think this internship offers exactly that. 
+      </p>
+      <p>
+        I’m especially excited about the chance to grow in a research-driven team while contributing with skills I’ve been building — from Python and machine learning to visualization and public engagement. It feels like the right place to keep learning while creating something useful.
+      </p>
+  
+      <h3>Assignment 2 – Self-Reflection</h3>
+      <p>
+        Doing the 
+        <a href="https://careersmart.org.uk/career-test-skills-audit-part-1" target="_blank">Skills Audit</a> 
+        was a great reminder of where I’m already strong — and where I still have room to grow. It highlighted communication and collaboration as strengths, and I recognize those as skills I use often, especially in group work and public-facing projects.
+      </p>
+      <p>
+        On the flip side, it pointed out areas like numerical confidence and Excel proficiency as needing development. And I agree — those are things I’ve already started working on through hands-on projects and short online courses.
+      </p>
+      <p>
+        For me, reflection isn’t about perfection — it’s about being honest, staying open, and moving forward. I’m excited to keep growing in these areas as I move toward a career that blends data science, purpose, and innovation.
+      </p>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
   <script>
     function openModal(id) {
       const modal = document.getElementById(id);
