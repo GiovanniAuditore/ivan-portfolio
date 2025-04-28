@@ -16,9 +16,11 @@
     <nav>
       <ul>
         <li><a href="javascript:void(0)" onclick="openModal('modal-about')">ABOUT ME</a></li>
-        <li><a href="javascript:void(0)" class="btn filled" onclick="openModal('modal-resume')">RESUME</a></li>
+        <li><a href="pdf/resume.pdf" class="btn filled" target="_blank">RESUME</a></li>
         <li><a href="javascript:void(0)" onclick="openModal('modal-projects')">PROJECTS</a></li>
         <li><a href="javascript:void(0)" onclick="openModal('modal-blog')">BLOG</a></li>
+        <li><a href="javascript:void(0)" onclick="openModal('modal-hobbies')">HOBBIES</a></li>
+
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
@@ -40,7 +42,7 @@
       <h2>Hello</h2>
       <h3>Here's who I am & what I do</h3>
      
-      <p>I'm a STEM student passionate about machine learning, sustainability, and digital innovation.</p>
+      <p>I'm a data science student passionate about machine learning, sustainability, and digital innovation.</p>
       <p>This is a space to share my journey and the things I'm learning along the way.</p>
     </div>
   </main>
@@ -48,8 +50,8 @@
   <!-- FOOTER -->
   <footer id="contact">
     <div class="footer-left">
-      <p>© 2025 Ivan Halka.</p>
-      <p>Powered with Castrol Oil and caffeine.</p>
+      <p>© 2025 Ivan Halka</p>
+      <p>Powered with Castrol Oil and caffeine</p>
     </div>
     <div class="footer-right">
       <p><strong>Call:</strong> +41 79 528 41 37</p>
@@ -100,39 +102,46 @@
     </div>
   </div>
 
-  <div id="modal-resume" class="modal">
-    <div class="modal-content resume-modal">
-      <span class="close" onclick="closeModal('modal-resume')">&times;</span>
-      <h2>My Resume</h2>
-      <iframe src="resume.pdf" width="100%" height="500px" frameborder="0"></iframe>
-      <a href="resume.pdf" download class="btn outline" style="margin-top: 1rem; display: inline-block;">Download PDF</a>
-    </div>
-  </div>
+<!-- MODAL: BLOG -->
+<div id="modal-blog" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-blog')">&times;</span>
+    
+    <h2>Reflection on the Data Science Internship Position</h2>
+    <p>When I was exploring internship opportunities, the Data Science Internship at Kanadevia Inova immediately caught my eye. Unlike many other roles that focus only on technical tasks, this internship blends technology with sustainability — something I really care about. Their mission to turn waste into valuable resources feels meaningful to me, not just innovative. I’ve always believed that technology should be used to make the world a better place, and Kanadevia’s work reflects that. That’s why, out of all the options I looked at, this one stood out as something that truly matters.</p>
+    
+    <p>I feel this position fits me especially well because of both my academic background and the experiences I’ve gathered along the way. Through my studies at FHNW and my own projects, I’ve built strong skills in Python, machine learning, and data visualization. Working on waste classification and building interactive dashboards taught me how powerful data can be when applied thoughtfully. I also really enjoy working in teams and sharing ideas, which is why I think I would fit well into Kanadevia’s research-focused environment. It’s not just about having the right skills — it’s about sharing the same mindset and values.</p>
+    
+    <p>What excites me most is the opportunity to both contribute and keep growing. I hope to bring fresh energy, creative thinking, and solid technical skills to Kanadevia’s projects. At the same time, I’m looking forward to learning even more from a team that’s deeply committed to using data for good. I want to be part of something meaningful — helping to refine data methods, support sustainability efforts, and make a real impact. I see this internship not just as a next step, but as the right step toward building a career that combines data science, purpose, and innovation.</p>
+    
+    <p>You can view my application letter here: <a href="pdf/applicationletter (1).pdf" target="_blank">📄 View Application Letter (PDF)</a>.</p>
+    <p>Here is the job description: <a href="pdf/Kanadevia Inova.pdf" target="_blank">📄 View Job Description (PDF)</a>.</p>
 
-  <div id="modal-blog" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal-blog')">&times;</span>
-      <h2>Reflection on the Data Science Internship Position</h2>
-      <p>When I was exploring internship opportunities, the Data Science Internship at Kanadevia Inova immediately caught my eye. Unlike many other roles that focus only on technical tasks, this internship blends technology with sustainability — something I really care about. Their mission to turn waste into valuable resources feels meaningful to me, not just innovative. I’ve always believed that technology should be used to make the world a better place, and Kanadevia’s work reflects that. That’s why, out of all the options I looked at, this one stood out as something that truly matters.</p>
+    <h2>Reflection on the Skills Audit</h2>
+    <p>Doing the Skills Audit was honestly a great reminder for me — a reminder of where I’m strong, but also where I can still grow. It highlighted communication, collaboration, and problem-solving as some of my strengths, and that felt accurate. I use those skills a lot in group projects, and I genuinely enjoy working with others to find solutions and share ideas.</p>
     
-      <p>I feel this position fits me especially well because of both my academic background and the experiences I’ve gathered along the way. Through my studies at FHNW and my own projects, I’ve built strong skills in Python, machine learning, and data visualization. Working on waste classification and building interactive dashboards taught me how powerful data can be when applied thoughtfully. I also really enjoy working in teams and sharing ideas, which is why I think I would fit well into Kanadevia’s research-focused environment. It’s not just about having the right skills — it’s about sharing the same mindset and values.</p>
+    <p>On the flip side, the audit pointed out that I could boost my numerical confidence and get better at tools like Excel. I definitely agree. Even though I’m comfortable with statistics, sometimes I could be quicker and more precise, especially when working with large datasets. I’ve already started working on this by doing more hands-on projects and taking short online courses. In the context of the Kanadevia internship, I don’t see these as major disadvantages — I see them as growth areas. I’ll have plenty of opportunities to keep improving while contributing to real, meaningful projects.</p>
     
-      <p>What excites me most is the opportunity to both contribute and keep growing. I hope to bring fresh energy, creative thinking, and solid technical skills to Kanadevia’s projects. At the same time, I’m looking forward to learning even more from a team that’s deeply committed to using data for good. I want to be part of something meaningful — helping to refine data methods, support sustainability efforts, and make a real impact. I see this internship not just as a next step, but as the right step toward building a career that combines data science, purpose, and innovation.</p>
-      <p>You can view my application letter here: <a href="pdf/Ivan_Halka_Cover_Letter.pdf" target="_blank">📄 View Application Letter (PDF)</a>.</p>
-
-      <h2>Reflection on the Skills Audit</h2>
-      <p>Doing the Skills Audit was honestly a great reminder for me — a reminder of where I’m strong, but also where I can still grow. It highlighted communication, collaboration, and problem-solving as some of my strengths, and that felt accurate. I use those skills a lot in group projects, and I genuinely enjoy working with others to find solutions and share ideas.</p>
-    
-      <p>On the flip side, the audit pointed out that I could boost my numerical confidence and get better at tools like Excel. I definitely agree. Even though I’m comfortable with statistics, sometimes I could be quicker and more precise, especially when working with large datasets. I’ve already started working on this by doing more hands-on projects and taking short online courses. In the context of the Kanadevia internship, I don’t see these as major disadvantages — I see them as growth areas. I’ll have plenty of opportunities to keep improving while contributing to real, meaningful projects.</p>
-    
-      <p>At the end of the day, reflection for me isn’t about focusing on weaknesses — it’s about staying open, being honest with myself, and always moving forward. I’m excited to keep building my skills in these areas because I know they’ll make me a stronger data scientist. Growth is part of the journey, and I’m ready for it.
-<br>
-
-      </p>
+    <p>At the end of the day, reflection for me isn’t about focusing on weaknesses — it’s about staying open, being honest with myself, and always moving forward. I’m excited to keep building my skills in these areas because I know they’ll make me a stronger data scientist. Growth is part of the journey, and I’m ready for it.</p>
+  
+  </div>   <br>
       <br>
-      <br>
-    </div>
+</div>
+
+<!-- MODAL: HOBBIES -->
+<div id="modal-hobbies" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-hobbies')">&times;</span>
+    <h2>My Hobbies</h2>
+    <p>Outside of my academic and professional life, I enjoy activities that keep me balanced, energized, and connected. I practice martial arts, which helps me maintain both physical fitness and mental discipline. I am also passionate about learning new languages, as it allows me to better understand and appreciate different cultures.</p>
+
+    <p>Spending quality time with people I care about is very important to me, and I enjoy meaningful conversations, shared experiences, and simply enjoying the moment together. These hobbies not only enrich my personal life but also strengthen my ability to work collaboratively and adaptively in diverse environments.</p>
   </div>
+</div>
+
+   
+    
+
 
   <!-- SCRIPTS -->
   <script>
